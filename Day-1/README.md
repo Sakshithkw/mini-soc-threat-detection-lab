@@ -1,28 +1,42 @@
-# Day-1 – Lab Setup & Environment Preparation
+✅ Day-1 – Lab Setup & Wazuh SIEM Deployment Preparation
 
-## Tasks Completed
+Prepare the virtual lab environment and deploy Wazuh SIEM using Docker for further threat-detection and monitoring exercises.
 
-- Used VMware / VirtualBox
-- Created Ubuntu Server VM
-- Installed updates & prerequisites
-- Planned mini-SOC architecture
-- Prepared Windows 10 VM for agent deployment
+🛠️ Tasks Completed
+✔️ 1. Virtual Lab Preparation
 
-## Lab Topology
+Installed VMware / VirtualBox
 
-- Wazuh Manager (Ubuntu)
-- Windows 10 Endpoint
-- Internet connection enabled for package installation
+Created a Ubuntu Server VM (for Wazuh Manager)
 
-## Why this step matters
+Created a Windows 10 VM (planned endpoint for agent installation)
 
-Before SIEM configuration, labs must be ready so that:
+Allocated CPU, RAM, and storage resources appropriately
 
-- endpoints can send logs
-- SIEM server can receive & analyze data
+✔️ 2. Ubuntu Server Configuration
 
-## Next Steps (Day-2)
+Updated system packages
 
-- Install Wazuh SIEM
-- Connect Windows endpoint using Wazuh Agent
-- Verify connection
+Installed required prerequisites
+
+Enabled internet access & hostname configuration
+
+✔️ 3. Docker Installation & Setup
+
+Installed Docker Engine on Ubuntu
+
+Enabled and verified Docker service status
+
+Added user to Docker group
+
+Pulled Wazuh docker images
+
+✔️ 4. Wazuh Deployment Started
+
+Deployed Wazuh All-in-One Docker installation
+
+Verified container creation logs
+
+Encountered SSL certificate mapping warnings (not blocking)
+
+Dashboard access will be completed in Day-2
